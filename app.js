@@ -29,14 +29,15 @@ boxes.forEach((box) => {
     if (turnO) {
       //playerO
       box.innerHTML = "O";
+      box.classList.add("playerO");
       turnO = false;
     } else {
       // pleayerX
       box.innerHTML = "X";
+      box.classList.add("playerX");
       turnO = true;
     }
     box.disabled = true;
-
     checkWinner();
   });
 });
@@ -51,6 +52,7 @@ const enableBoxes = () => {
     for(let box of boxes){
         box.disabled = false;
         box.innerText = "";
+        box.classList.remove("playerX", "playerO");
     }
 }
 

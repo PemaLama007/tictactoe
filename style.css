@@ -69,3 +69,10 @@ body {
 .hide {
     display: none;
 }
+.playerO {
+    color: rgb(36, 118, 225);
+}
+.playerX {
+    color: #b0413e;
+
+}
